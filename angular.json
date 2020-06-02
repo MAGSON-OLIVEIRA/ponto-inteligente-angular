@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ponto-inteligente"
+    }
+  },
+  "defaultProject": "ponto-inteligente",
+  "cli": {
+    "analytics": "29e70619-d2a1-4d0f-9ccd-ce064d9767d8"
+  }
 }
