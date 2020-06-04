@@ -39,6 +39,26 @@ export class LoginComponent implements OnInit {
         .subscribe(
           data => {
             console.log(JSON.stringify(data));
+            localStorage['token'] = data['data']['token'];
+
+            const usuarioDta = JSON.parse(
+              atob(data['data']['token'].split('.')[1]));
+            
+            console.log(JSON.stringify(usuarioDta));
+
+            if(usuarioDta['role'] == 'ROLE_ADMIN'){
+              alert('redir pg adm')
+            }else{
+              alert('redi user')
+            }
+          },
+          err =>{
+            console.log(JSON.stringify(err));
+            let msn: string = "Tente novamente. ";
+            if(err['status'] == 401){
+              msn = "E-mail ou senha inválidos."
+            }
+            this.snackBar.open(msn, "Erro", {duration: 5000});
           }
         )
   }

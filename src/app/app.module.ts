@@ -6,8 +6,14 @@ import { AppComponent } from './app.component';
 
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import {LoginModule} from './autenticacao/login/login.module';
-import {LoginModule, LoginRoutingModule} from './autenticacao';
+import {
+  LoginModule, 
+  LoginRoutingModule, 
+  CadastroPjRoutingModule, 
+  CadastroPjModule,
+  CadastroPfRoutingModule, 
+  CadastroPfModule
+} from './autenticacao';
 
 
 @NgModule({
@@ -20,6 +26,10 @@ import {LoginModule, LoginRoutingModule} from './autenticacao';
     BrowserAnimationsModule,
     LoginModule, 
     LoginRoutingModule,
+    CadastroPjRoutingModule,
+    CadastroPjModule,
+    CadastroPfRoutingModule, 
+    CadastroPfModule,
     
     AppRoutingModule
 
