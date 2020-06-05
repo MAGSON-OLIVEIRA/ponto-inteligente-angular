@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class CadastroPjService{
-    private readonly PATH: string = '/cadastrar-pj/salvar';
+    private readonly PATH: string = '/cadastrar-pj';
     constructor(private http: HttpClient){ }
     
     cadastrar(cadastroPj: CadastroPj): Observable<any>{
