@@ -1,10 +1,11 @@
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   LoginModule, 
@@ -22,7 +23,6 @@ import {
   ],
   imports: [
     BrowserModule,
-    MatButtonModule,
     BrowserAnimationsModule,
     LoginModule, 
     LoginRoutingModule,
@@ -30,6 +30,9 @@ import {
     CadastroPjModule,
     CadastroPfRoutingModule, 
     CadastroPfModule,
+    MatIconModule,
+    MatToolbarModule,
+    FlexLayoutModule,
     
     AppRoutingModule
 

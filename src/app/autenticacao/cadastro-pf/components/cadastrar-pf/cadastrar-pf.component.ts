@@ -31,10 +31,7 @@ export class CadastrarPfComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       senha: ['', [Validators.required, Validators.minLength(4)]],
       cpf: ['', [Validators.required, CpfValidator]],
-      cnpj: ['', [Validators.required, CnpjValidator]],
-      valorHora: ['',[Validators.required]],
-      qtdHorasTrabalhadaDia: ['',[Validators.required]],
-      qtdHorasAlmoco:['',[Validators.required]]
+      cnpj: ['', [Validators.required, CnpjValidator]]
     });
   }
 

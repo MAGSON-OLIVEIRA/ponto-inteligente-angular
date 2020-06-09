@@ -47,9 +47,9 @@ export class LoginComponent implements OnInit {
             console.log(JSON.stringify(usuarioDta));
 
             if(usuarioDta['role'] == 'ROLE_ADMIN'){
-              alert('redir pg adm')
+              this.routes.navigate(['/admin']);
             }else{
-              alert('redi user')
+              this.routes.navigate(['/funcionario']);
             }
           },
           err =>{

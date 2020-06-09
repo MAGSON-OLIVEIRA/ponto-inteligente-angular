@@ -5,9 +5,6 @@ export class CadastroPf {
         public senha: string,
         public cnpj: string,
         public cpf: string,
-        public emai: string,
-        public valorHora: string,
-        public qtdHorasTrabalhadaDia: string,
-        public qtdHorasAlmoco: string
+        public emai: string
         ){}
 }
